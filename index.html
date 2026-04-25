@@ -3,118 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AIAcceleratedRetirement</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #030712;
-            color: #fff;
-        }
-
-        /* Hero Section Styles */
-        .hero-section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-image: linear-gradient(to right, #2ecc71, #3498db);
-            text-align: center;
-        }
-
-        .hero-section h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        /* Bento Grid Styles */
-        .bento-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 40px;
-        }
-
-        .card {
-            background-color: #333;
-            padding: 20px;
-            border: 1px solid #555;
-            border-radius: 10px;
-            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
-            cursor: pointer;
-        }
-
-        .card:hover {
-            background-color: #444;
-            transform: translateY(-5px);
-            box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
-        }
-
-        /* Service Card Styles */
-        .service-card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 150px;
-            background-color: #333;
-            padding: 10px;
-            border: 1px solid #555;
-            border-radius: 10px;
-            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-card h2 {
-            font-size: 18px;
-            margin-bottom: 10px;
-        }
-
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .bento-grid {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-    </style>
+    <title>Efficiency Engineers</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="hero-section">
-        <h1>Automate. Scale. Dominate.</h1>
-    </div>
+    <!-- Header Section -->
+    <header class="dark-mode">
+        <nav>
+            <ul>
+                <li><a href="#growth">GROWTH</a></li>
+                <li><a href="#operations">OPERATIONS</a></li>
+                <li><a href="#technical-qa">TECHNICAL QA</a></li>
+                <li><a href="#the-lab">THE LAB</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="bento-grid">
-        <div class="card service-card">
-            <div class="service-card">
-                <h2>Shadow QA</h2>
-                <p>Automate your testing process with AI-powered Shadow QA.</p>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Efficiency Engineers</h1>
+        <p>Sell more, automate more, innovate more. Let us handle the mundane.</p>
+        <button>Get Started</button>
+    </section>
+
+    <!-- Pillars Section -->
+    <main class="pillars">
+        <div id="growth" class="pillar">
+            <h2>GROWTH (AI SDRs)</h2>
+            <p>Scale your customer acquisition with autonomous AI Sales Representatives. We don't just find leads; we close them.</p>
+            <a href="#" class="button">Learn More</a>
         </div>
 
-        <div class="card service-card">
-            <div class="service-card">
-                <h2>Logistics AI</h2>
-                <p>Optimize your logistics operations with our AI-driven solutions.</p>
-            </div>
+        <div id="operations" class="pillar">
+            <h2>OPERATIONS (Efficiency)</h2>
+            <p>Automated business workflows that handle the mundane. We sell peace of mind and hours back to your executive team.</p>
+            <a href="#" class="button">Learn More</a>
         </div>
 
-        <div class="card service-card">
-            <div class="service-card">
-                <h2>Accounting</h2>
-                <p>Streamline your accounting processes with our AI-powered tools.</p>
-            </div>
+        <div id="technical-qa" class="pillar">
+            <h2>TECHNICAL QA (Engineering Authority)</h2>
+            <p>Shadow QA - Our flagship AI engine. We generate end-to-end test suites from raw user logs. Professional-grade reliability for serious software.</p>
+            <a href="#" class="button">Learn More</a>
         </div>
-    </div>
 
-    <script>
-        // JavaScript code here
-    </script>
+        <div id="the-lab" class="pillar">
+            <h2>THE LAB (Innovation)</h2>
+            <p>Bleeding-edge AI experiments. From custom LLM fine-tuning to real-time data extraction. Stay ahead of the curve before it exists.</p>
+            <a href="#" class="button">Learn More</a>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Efficiency Engineers. All rights reserved.</p>
+    </footer>
 </body>
 </html>
