@@ -1,43 +1,134 @@
-.terminal-container {
-    width: 400px;
-    height: auto;
-    background-color: #333;
+/* Global Styles */
+
+.dark-mode {
+    background-color: #030712;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1d23;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+/* Hero Section Styles */
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #030712;
+    color: #ffffff;
+}
+
+#hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+/* Growth Pillar Styles */
+
+#growth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.pillars-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.pillar {
+    background-color: #333f4d;
     padding: 10px;
     border-radius: 5px;
 }
 
-.header {
-    color: white;
-    font-size: 12px;
+.pillar i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Operations Pillar Styles */
+
+#operations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Technical QA Pillar Styles */
+
+#technical_qa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.terminal-container {
+    background-color: #333f4d;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.terminal {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+/* The Lab Pillar Styles */
+
+#the_lab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Footer Styles */
+
+#footer {
+    background-color: #1a1d23;
+    padding: 10px;
+    color: #ffffff;
     text-align: center;
 }
 
-.dots {
-    position: relative;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* Responsive Design */
 
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-block;
-    margin-left: 5px;
-}
-
-.logs {
-    padding: 10px;
-    font-family: Courier, monospace;
-    color: #2dd4bf;
-    overflow-y: scroll;
-}
-
-.code {
-    padding: 10px;
-    font-family: Courier, monospace;
-    color: white;
-    background-color: #444;
+@media (max-width: 768px) {
+    .pillars-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
