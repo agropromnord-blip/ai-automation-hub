@@ -2,109 +2,69 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Accelerated Retirement</title>
+    <title>AI ACCELERATED RETIREMENT</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark-mode">
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="logo">AI Accelerated Retirement</div>
-        <ul>
-            <li><a href="#growth">GROWTH</a></li>
-            <li><a href="#operations">OPERATIONS</a></li>
-            <li><a href="#technical_qa">TECHNICAL QA</a></li>
-            <li><a href="#the_lab">THE LAB</a></li>
-        </ul>
-    </nav>
+<body>
+    <!-- Growth -->
+    <div class="growth">
+        <h2>Growth</h2>
+        <p>Dream big, work smart</p>
+    </div>
 
-    <!-- Hero Section -->
-    <header id="hero">
-        <h1>Transform Your Retirement with AI Automation Agency (B2B) and Micro-SaaS</h1>
-        <p>Unlock the power of artificial intelligence to achieve your financial goals.</p>
-    </header>
+    <!-- Ops -->
+    <div class="ops">
+        <h2>Ops</h2>
+        <p>Efficient operations for maximum productivity</p>
+    </div>
 
-    <!-- Growth Pillar -->
-    <section id="growth">
-        <h2>GROWTH</h2>
-        <div class="pillars-container">
-            <div class="pillar">
-                <i class="fas fa-rocket"></i>
-                <h3>Dream Big, Achieve Bigger</h3>
-                <p>Unlock your financial potential with AI-powered business ideas.</p>
-            </div>
-            <div class="pillar">
-                <i class="fas fa-money-bill-wave"></i>
-                <h3>10,000 Euro Monthly Income Guaranteed</h3>
-                <p>Monetize your skills and expertise with AI-driven Micro-SaaS solutions.</p>
-            </div>
+    <!-- Technical QA -->
+    <div class="tech-qa">
+        <h2 id="technical-qa">Technical QA</h2>
+        <pre><code>
+// Welcome to the AI Accelerated Retirement project
+// This is a technical blog where we share our experiences and insights
+
+// Step 1: Setting up the development environment
+// ... (insert code here)
+
+// Step 2: Creating a Make.com script for automation
+// ... (insert code here)
+        </code></pre>
+        <div class="terminal-animation">
+            <span id="cursor">_</span>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+            <script>
+                anime({
+                    targets: '#cursor',
+                    scale: [1, 0],
+                    loop: true,
+                    elasticity: 200
+                });
+            </script>
         </div>
-    </section>
+    </div>
 
-    <!-- Operations Pillar -->
-    <section id="operations">
-        <h2>OPERATIONS</h2>
-        <div class="pillars-container">
-            <div class="pillar">
-                <i class="fas fa-cog"></i>
-                <h3>Simplify Your Business Operations with AI Automation</h3>
-                <p>Leverage the power of artificial intelligence to streamline your workflow.</p>
-            </div>
-            <div class="pillar">
-                <i class="fas fa-calendar-check"></i>
-                <h3>Accelerate Your Retirement in Just 10 Years</h3>
-                <p>Reinvest your surplus capital in ETFs (SXR8/VWCE) and watch your wealth grow.</p>
-            </div>
-        </div>
-    </section>
+    <!-- The Lab -->
+    <div class="lab">
+        <h2>The Lab</h2>
+        <p>Experimentation and prototyping for innovation</p>
+    </div>
 
-    <!-- Technical QA Pillar -->
-    <section id="technical_qa">
-        <h2>TECHNICAL QA</h2>
-        <div class="terminal-container">
-            <div class="terminal">
-                <pre>
-                    Loading user_session_042.log...
-                    AI analyzing patterns...
-                    Generating Playwright C# Test...
-                </pre>
-            </div>
-            <form id="early-access-form">
-                <input type="email" placeholder="Enter your email address">
-                <button>Get Early Access</button>
-            </form>
-        </div>
-    </section>
+    <!-- Early Access form -->
+    <form id="early-access" action="#" method="post">
+        <input type="text" name="email" placeholder="Enter your email">
+        <button type="submit">Get early access</button>
+    </form>
 
-    <!-- The Lab Pillar -->
-    <section id="the_lab">
-        <h2>THE LAB</h2>
-        <p>A place where creativity and innovation know no bounds.</p>
-        <ul>
-            <li><a href="#">Explore Our Projects</a></li>
-            <li><a href="#">Join Our Community</a></li>
-            <li><a href="#">Get in Touch</a></li>
-        </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2024 AI Accelerated Retirement. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript for the terminal animation -->
-    <script src="https://cdn.jsdelivr.net/npm/terminal-kit@1.0.6/dist/terminal-kit.min.js"></script>
-    <script>
-        const terminal = new TerminalKit({
-            theme: 'dark'
-        });
-        terminal.appendText('Loading user_session_042.log...');
-        setTimeout(() => {
-            terminal.appendText('\nAI analyzing patterns...');
-        }, 2000);
-        setTimeout(() => {
-            terminal.appendText('\nGenerating Playwright C# Test...');
-        }, 4000);
-    </script>
+    <!-- Dark Theme -->
+    <style>
+        body {
+            background-color: #030712;
+            color: #fff;
+        }
+    </style>
 </body>
 </html>
